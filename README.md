@@ -1,21 +1,24 @@
-# E-Title
+# E-title
+## Setup backend
 
-#e-title-backend
-#Setup backend
-open project in intellij IDE
-right click and run 'EtitleApplication'
+1. open project in intellij IDE
+2. right click and run 'EtitleApplication'
 
-#Setup frontend
-cd e-title-frontend
-npm install
-npm start
+## Setup frontend
 
-Known issues & Steps to resolve:
+1. cd e-title-frontend
+2. npm install
+3. npm start
+
+## Important !!!
+There are two implementation for CarService:
+- @Qualifier("BlockchainCarServiceImpl"): Integrating with blockchain to register user
+- @Qualifier("CarServiceImpl"): Don't integrating with bockchain 
+
+## Known issues & Steps to resolve:
 When you can't go to login page ( login page does not display).
 
 Clear local storage:
-
-Right click and select Inspect
-Go to Application tab
-Clear local storage
-Initialize data
+- Right click and select Inspect
+- Go to Application tab
+- Clear local storage
